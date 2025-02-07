@@ -9,4 +9,9 @@ import { GreetingComponent } from '../components/greeting/greeting.component';
 })
 export class HomeComponent {
   homeMessage = signal("Greetings, Suyog!")
+  
+// event listerners //
+  handleKeyUp(event: KeyboardEvent ){
+    console.log(`User pressed ${event.key} key.`)
+  }
 }
